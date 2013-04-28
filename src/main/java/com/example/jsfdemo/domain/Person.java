@@ -9,6 +9,7 @@ import javax.validation.constraints.Size;
 
 public class Person {
 	
+	private int id;
 	private String firstName = "unknown";
 	private String zipCode = "";
 	private String pin = "";
@@ -69,6 +70,12 @@ public class Person {
 	}
 	public void setMarried(boolean married) {
 		this.married = married;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 }
