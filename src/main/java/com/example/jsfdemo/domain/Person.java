@@ -1,6 +1,7 @@
 package com.example.jsfdemo.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Past;
@@ -17,6 +18,7 @@ public class Person {
 	private double weight;
 	private boolean married;
 	private int numOfChildren;
+	private List<Animal> listOfAnimals;
 	
 	@Size(min = 2, max = 20)
 	public String getFirstName() {
